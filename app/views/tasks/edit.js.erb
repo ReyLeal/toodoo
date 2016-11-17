@@ -1,0 +1,5 @@
+$('.modal-body').html("<%= j render 'form', task: @task %>")
+$('.modal').modal();
+$(' .modal-footer .btn-primary').click(function() {
+  $('.edit_task').submit();
+})
